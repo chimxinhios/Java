@@ -1,0 +1,1 @@
+System.out.println("Area = " + 7.5 * 3.8);
