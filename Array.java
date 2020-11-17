@@ -2,14 +2,16 @@ import java.util.Scanner;
 
 public class Array {
 	public static void main(String[] args) {
-		// Scanner sc = new Scanner(System.in);
-		// int[] arr = new int[10];
-		// for(int i = 0; i < 10; i++){
-		// 	arr[i] = sc.nextInt();
-		// }
-		// for(int i = 0; i < 10; i++){
-		// 	System.out.print(arr[i] + " ");
-		// }
+		/*
+		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[10];
+		for(int i = 0; i < 10; i++){
+			arr[i] = sc.nextInt();
+		}
+		for(int i = 0; i < 10; i++){
+			System.out.print(arr[i] + " ");
+		}
+		*/
 /*
 		Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -103,6 +105,30 @@ public class Array {
 // 66 ......
 /*
 		Scanner sc = new Scanner(System.in);
+				int n = sc.nextInt();
+		int[] arr = new int[n];
+
+		for (int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+		}
+
+	    for (int i = 0; i < n; i++) {
+	        for (int j = i + 1; j < n; j++) {
+	            if (arr[i] > arr[j]) {
+	               
+	                int t = arr[i];
+	                arr[i] = arr[j];
+	                arr[j] = t;
+	            }
+	        }
+	    }
+	    
+		for (int i = 0; i < n; i++) {
+			System.out.print(arr[i] + " ");
+		}
+*/
+/*
+		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int m = sc.nextInt();
 		int[][] arr = new int[n][m];
@@ -137,9 +163,32 @@ System.out.print(sum);
 		}
 		System.out.print(sum);
 */
-
-
-
+/*
+		Scanner sc = new Scanner(System.in);
+		String s1 = sc.next();
+		String s2 = sc.next();
+		s1 = s1.toLowerCase();
+		s2 = s2.toLowerCase();
+		System.out.print(s1.indexOf(s2));
+*/
+/*
+		Scanner sc = new Scanner(System.in);
+		String s = sc.next();
+		for(char c = '0'; c <= '9';c++) {
+			s = s.replace(c + "", "");
+		}
+		System.out.println(s);
+*/
+/*
+		Scanner sc = new Scanner(System.in);
+		String s = sc.next();
+		String a = "";
+		for(int i = s.length() - 1; i>= 0; i--){
+			a += s.charAt(i);
+		}
+		System.out.print(a);
+*/
+// thiếu 72-74.
 
 	}
 }
